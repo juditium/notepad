@@ -72,7 +72,7 @@ Slovenčina (sk), čeština (cs), angličtina (en), nemčina (de), poľština (p
 - Automatické prispôsobenie bublín dĺžke textu (nemčina a maďarčina +25–35 % oproti angličtine); QA nástroj v CMS, ktorý upozorní na pretečenie.
 - Onomatopoje sú lokalizovaný obsah (každý jazyk má vlastné).
 - Audio rozprávanie pre každý jazyk a úroveň (L1 povinne ľudský hlas, L2/L3 môže byť kvalitné neurónové TTS s ľudskou korektúrou), s časovými značkami na zvýrazňovanie slov.
-- Biblické citácie (L3 a referencie): každý jazyk používa konkrétny preklad; licencia prekladu je samostatná právna položka (viď 9.3). Dátový model musí umožniť viac prekladov na jazyk a výmenu prekladu bez zmeny komiksu.
+- Biblické citácie (L3 a referencie): každý jazyk používa konkrétny preklad; primárne voľné preklady, viď 9.3. Dátový model musí umožniť viac prekladov na jazyk a výmenu prekladu bez zmeny komiksu.
 
 ## 6. FUNKCIE
 
@@ -120,8 +120,23 @@ GDPR čl. 8 (vek súhlasu podľa krajiny: SK 16, CZ 15, DE 16, PL 16, HU 16, UK/
 ### 9.2 Autorské práva k obsahu
 Všetky ilustrácie, scenáre a audio sú originálne diela s prevedenými majetkovými právami na prevádzkovateľa (zmluvy s ilustrátormi, scenáristami, hercami). Ak sa pri tvorbe použijú generatívne nástroje, platí interná politika: AI len na skice a referencie, finálne dielo ľudský autor (dôvod: autorskoprávna ochrana a požiadavky obchodov).
 
-### 9.3 Licencie biblických prekladov
-Citácie v L3 a odkazy na plný text vyžadujú licenciu od držiteľa práv prekladu pre každý jazyk (napr. Slovenská biblická spoločnosť – Slovenský ekumenický preklad; Česká biblická společnost – ČEP / Biblion – Bible21; Deutsche Bibelgesellschaft – Lutherbibel 2017; Pallottinum – Biblia Tysiąclecia; Magyar Bibliatársulat – RÚF 2014; pre angličtinu World English Bible ako public domain alternatíva k licencovaným prekladom). Dátový model musí umožniť výmenu prekladu. Parafrázy v bublinách sú vlastný text, ale označené ako parafráza, nie citát.
+### 9.3 Biblické preklady – autorské práva
+Text Písma ako taký je voľný. Chránené sú však **moderné preklady** ako autorské diela prekladateľov (ochrana 70 rokov po smrti autora, prípadne práva drží biblická spoločnosť). Zásada: **primárne používať voľné preklady**, chránené len tam, kde to držiteľ práv výslovne dovoľuje bez zmluvy.
+
+| Jazyk | Voľný preklad (public domain) | Chránený preklad (len s povolením) |
+|---|---|---|
+| sk | Kamaldulská biblia (18. stor., archaická); Roháčkov preklad (autor † 1962, voľný až od r. 2033) | Slovenský ekumenický preklad (SBS), Katolícky preklad (SSV), Botekov preklad |
+| cs | Bible kralická (1613) | Český ekumenický překlad, Bible21, Jeruzalémská bible |
+| en | King James Version (mimo UK), World English Bible, ASV | NIV, ESV, NRSV |
+| de | Lutherbibel 1912, Elberfelder 1905 | Lutherbibel 2017, Einheitsübersetzung |
+| pl | Biblia Gdańska (1632), Biblia Wujka (1599) | Biblia Tysiąclecia, Biblia Warszawska |
+| hu | Károli (1590, revízia 1908) | RÚF 2014, Szent István Társulat |
+
+Praktické dôsledky pre aplikáciu:
+- Dialógy a narácia v bublinách sú **vlastný autorský text** (parafráza), nie citát – tam nevzniká žiadny licenčný problém.
+- Priame citáty (L3, odkazy na plný text) sa predvolene berú z voľného prekladu daného jazyka. Pre slovenčinu, kde moderný voľný preklad neexistuje, sa počíta s písomným súhlasom Slovenskej biblickej spoločnosti alebo s vlastným prekladom kľúčových veršov.
+- Väčšina biblických spoločností dovoľuje citovať bez zmluvy do určitého rozsahu (typicky do 500 veršov a menej než 25 % diela, s uvedením zdroja). Pri odkaze na plný text je potrebná zmluva alebo prelinkovanie na oficiálnu stránku držiteľa práv.
+- Dátový model musí umožniť viac prekladov na jazyk a ich výmenu konfiguráciou.
 
 ### 9.4 Obsahová rada
 Ekumenický poradný zbor (zástupcovia aspoň katolíckej, evanjelickej a pravoslávnej tradície plus biblista a detský psychológ) schvaľuje scenáre a politiku citlivosti. Proces je zdokumentovaný v CMS.
