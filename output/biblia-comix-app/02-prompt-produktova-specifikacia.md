@@ -55,8 +55,8 @@ Nič sa nezamlčuje, mení sa spôsob zobrazenia. Riadi sa tabuľkou v `01-vizua
 ## 4. VIZUÁLNY ŠTÝL
 
 Záväzný dokument: `01-vizualny-styl.md` („Svetlo a línia“). Kľúčové body pre implementáciu:
-- Jeden štýl, tri intenzity (deti „Mäkké svetlo“, teenageri „Dynamická línia“, dospelí „Grafický román“).
-- Paleta „Pôda a nebo“ a design tokeny z dokumentu sa použijú aj v UI (pergamenová svetlá téma, atramentová tmavá téma).
+- Jeden štýl, tri intenzity (deti „Mäkké svetlo“, teenageri „Moderná ligne claire“, dospelí „Tuš a akvarel“). Všetky tri sú svetlé a čisté; žiadna úroveň nie je pochmúrna. Vizuálna identita aplikácie (ikona, obaly, marketing) používa jazyk plochej grafiky podľa kap. 4.1 vizuálneho štýlu.
+- Paleta „Pôda a nebo“ a design tokeny z dokumentu sa použijú aj v UI (pergamenová svetlá téma predvolená, atramentová tmavá voliteľná).
 - **Text sa nikdy nevypaľuje do obrázka.** Panel = obrazové vrstvy + vektorová textová vrstva (bubliny, captions, onomatopoje) s pozíciou, tvarom a maximálnym rozmerom. Lokalizácia mení len textovú vrstvu.
 - Panely sa dodávajú ako samostatné assety (2048 px na dlhšej strane, formát 4:5), strana je definovaná layoutom panelov, nie jedným obrázkom.
 - Dva režimy čítania: **guided view** (panel po paneli, swipe, jemná paralaxa) a **page view** (celá strana, pinch-zoom).
@@ -88,7 +88,7 @@ Slovenčina (sk), čeština (cs), angličtina (en), nemčina (de), poľština (p
 ### 6.2 Podľa úrovne
 - **L1:** veľké dotykové plochy, žiadne textové menu bez ikon, obrázkový kvíz po príbehu, nálepky za dočítanie, režim „číta rodič“ (vypne audio, zobrazí text pre rodiča väčším písmom), rodičovská brána pre všetko mimo čítania.
 - **L2:** otázky na zamyslenie, slovníček, zbieranie „postáv“ do vlastného albumu, zdieľanie panelu ako obrázka (s watermarkom, bez osobných dát), voliteľný denník odpovedí (lokálne, šifrované).
-- **L3:** poznámky pod čiarou, hebrejské/grécke pojmy, krížové odkazy SZ/NZ, porovnanie prekladov, tmavá téma predvolená, export poznámok.
+- **L3:** poznámky pod čiarou, hebrejské/grécke pojmy, krížové odkazy SZ/NZ, porovnanie prekladov, export poznámok.
 
 ### 6.3 Účty a profily
 - Jeden účet (dospelý), až 6 profilov; detský profil bez e-mailu a bez zberu osobných údajov; prihlásenie Apple / Google / e-mail; voliteľný anonymný režim bez účtu (lokálne dáta).
@@ -173,10 +173,13 @@ Ekumenický poradný zbor (zástupcovia aspoň katolíckej, evanjelickej a pravo
 
 ## PRÍLOHA A – Art-direction prompty pre ilustrátorov / generatívne nástroje (skice a referencie)
 
-Spoločný základ (pripoj ku každému): *„European clear-line comic art with variable brush contour, warm single light source from above, earthy palette of Jerusalem stone, terracotta, olive green and deep Galilean blue, gold used only for divine presence, historically accurate Near-Eastern setting, Semitic features, no text in image, portrait 4:5, layered composition.“*
+Schválené 4. 10. 2026 na základe ukážok scény Utíšenie búrky (viď `01-vizualny-styl.md`, kap. 7).
 
-- **L1 Deti:** *„…soft rounded shapes, 1:3 head-to-body proportions, big expressive eyes, thin warm-brown outline like a pencil crayon, pastel lightened palette, flat colors with one shadow step, bright and friendly, a small animal companion in the scene, no violence.“*
-- **L2 Teenageri:** *„…dynamic 1:6 stylized proportions, black ink contour with varied weight, two-step cel shading, dramatic camera angle, scene color key (e.g. orange-violet for burning bush), energetic motion lines, cinematic but not graphic.“*
-- **L3 Dospelí:** *„…realistic 1:7.5 proportions, heavy broken brush line dissolving into hatching and ink wash, chiaroscuro from one light source, muted desaturated palette with a single pure gold accent, paper and pigment texture, graphic-novel gravity in the spirit of Rembrandt and Caravaggio, restrained and dignified.“*
+Spoločný základ (pripoj ku každému): *„European clear-line comic art, bright daylight feel, warm single light source from above, earthy palette of Jerusalem stone, terracotta, olive green, turquoise water and clear Galilean blue, gold used only for divine presence, historically accurate Near-Eastern setting, Semitic features, Jesus with dark hair, dark eyes, olive skin and a simple first-century robe, no text in image, portrait 4:5, layered composition.“*
 
-Negatívne pokyny pre všetky úrovne: *„no blond Jesus, no halos except Transfiguration/Resurrection, no medieval European castles or knights, no cartoon wings on angels, no anthropomorphic God the Father, no text or lettering, no watermark.“*
+- **L1 Deti – „Mäkké svetlo“:** *„…children's picture-book style, soft rounded shapes, 1:3 head-to-body proportions, big expressive eyes, thin warm-brown outline like a pencil crayon, pastel lightened palette, flat colors with one soft shadow step, bright and friendly, a small animal companion in the scene, no violence.“*
+- **L2 Teenageri – „Moderná ligne claire“:** *„…modern ligne claire, clean confident black outline of even weight, flat vivid colors with minimal cel shading, bright daylight palette, dynamic diagonal composition, stylized 1:6 proportions, energetic and cheerful like a contemporary animated adventure film, expressive faces, in the spirit of Asterix, Tintin and Blake and Mortimer.“*
+- **L3 Dospelí – „Tuš a akvarel“:** *„…elegant ink-and-watercolor graphic novel, fine expressive ink line with varied weight, loose luminous watercolor washes that leave white paper breathing, soft granulating pigment texture, realistic 1:7.5 proportions with individual weathered faces, contemplative but hopeful, lots of light and space, sophisticated European bande dessinée feel in the spirit of Sempé and Emmanuel Guibert.“*
+- **Značka / identita (nie komiks):** *„…bold flat graphic illustration like a modern screen-printed poster, five flat colors (cream, terracotta, olive, deep blue, one pure gold for light), subtle risograph grain, no outlines, confident simple shapes, mid-century sensibility in the spirit of Tom Haugomat and Malika Favre.“*
+
+Negatívne pokyny pre všetky úrovne: *„no dark or gloomy mood, no chiaroscuro, no heavy black shadows, no gritty texture, no blond Jesus, no halos except Transfiguration/Resurrection, no medieval European castles or knights, no cartoon wings on angels, no anthropomorphic God the Father, no text or lettering, no watermark.“*
