@@ -254,3 +254,15 @@ Všetky ostatné bubliny sú pod 15 slov a vyhovujú bez úprav.
 3. L3: čierny panel s doslovným citátom 17, 51 a následný záber s prikrytým telom.
 4. L3 poznámka ⁵ (päť kameňov, štyria bratia): označené ako tradícia, nie fakt. Potvrdiť, že takéto poznámky sú v súlade s ekumenickou neutralitou.
 5. Všetky „[cit.]“ pasáže nahradiť schváleným prekladom alebo potvrdiť vlastný preklad.
+
+## Ukážkové panely (vygenerované 5. 10. 2026)
+
+Priečinok `vizual/`, porovnávacia strana `06-ukazkove-panely-david-a-golias.html`.
+
+| Úroveň | Záber | Súbor |
+|---|---|---|
+| L1 | K8 konfrontácia, K6 zbroj, K9 pád | `DG-L1-konfrontacia.jpg`, `DG-L1-zbroj.jpg`, `DG-L1-pad.jpg` |
+| L2 | K8 konfrontácia, K9 beh s prakom, K9 pád | `DG-L2-konfrontacia.jpg`, `DG-L2-prak.jpg`, `DG-L2-pad.jpg` |
+| L3 | K8 splash, K7 potok, K9 ticho po páde, strana 11 (po sťatí, prikryté telo) | `DG-L3-splash.jpg`, `DG-L3-potok.jpg`, `DG-L3-ticho.jpg`, `DG-L3-strana11.jpg` |
+
+Panel `DG-L3-strana11.jpg` je konkrétny obraz k bodu 3 zoznamu na schválenie obsahovou radou.
